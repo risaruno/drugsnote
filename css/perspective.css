@@ -39,7 +39,7 @@
   height: 100%;
  }
 
- .section > div > img {
+ .section > div > .section-img {
   height: 100%;
  }
 
@@ -243,7 +243,7 @@
   height: 100%;
  }
 
- .section > div > img {
+ .section > div > .section-img {
   height: 100%;
  }
 
@@ -412,7 +412,7 @@
  /* HEADER */
 
  nav {
-  height: 10vh;
+  height: 15vh;
  }
 
  .logo-holder > a > img {
@@ -420,23 +420,138 @@
  }
 
  .menu {
-  visibility: hidden;
- }
- /* 
- .menu-links {
-  margin-right: 12px;
+  display: none;
  }
 
- .menu-item {
-  font-size: 16px;
-  padding: 20px;
+ /* MOBILE MENU */
+
+ .none {
+  display: none !important;
  }
 
- .btn-login > a {
-  width: 100px;
+ .trigger {
+  height: 15vh;
+ }
+
+ .trigger > img {
+  width: 36px;
   height: 36px;
+  cursor: pointer;
+ }
+
+ .menu-trigger {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: 24px;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  padding: 0 10%;
+  background: rgba(18, 61, 83, 0.56);
+  backdrop-filter: blur(5px);
+ }
+
+ .close-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+ }
+
+ .mobile-menu-account {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 6px;
+ }
+
+ .mobile-menu-account > .btn-login > a {
+  width: 100px;
+  height: 48px;
   font-size: 16px;
- } */
+ }
+
+ .mobile-menu-account > .btn-login.signup {
+  background-color: #fff;
+ }
+
+ .mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+ }
+
+ .mobile-menu-links > .menu-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 58px;
+  padding: 0 24px;
+  font-size: 16px;
+  border-radius: 20px;
+  gap: 12px;
+ }
+
+ .mobile-menu-links > .menu-item > *,
+ .drop-item > * {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ }
+
+ .mobile-menu-links > .menu-item .item-icon {
+ }
+
+ .mobile-menu-links > .menu-item .item-desc,
+ .drop-item .drop-desc {
+  flex-grow: 12;
+ }
+
+ .mobile-menu-links > .menu-item .item-arrow {
+ }
+
+ /* MOBILE DROPDOWN */
+
+ .menu-item.menu-dropdown {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: unset;
+ }
+
+ .menu-dropdown > .main-item,
+ .mobile-dropdown-items > .drop-item {
+  width: 100%;
+  height: 58px;
+  gap: 12px;
+ }
+
+ .mobile-dropdown-items {
+  display: none !important;
+  flex-direction: column;
+  width: 100%;
+ }
+
+ .mDropIt {
+  display: flex !important;
+ }
+
+ .mobile-dropdown-items > .drop-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .drop-icon {
+  width: 27px;
+ }
 
  /* HEADER END */
 
@@ -452,9 +567,8 @@
  .section3 > div,
  .section4 > div,
  .section5 > div {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex: unset;
+  height: min-content;
  }
 
  .section3-right > .text,
@@ -463,55 +577,66 @@
   margin-top: 0;
  }
 
- .section > div > img {
+ .section > div > .section-img {
   margin-right: -10%;
-  height: 70%;
+  width: 100%;
+  height: auto;
  }
 
  /* 1ST SECTION */
 
  .section1 {
-  height: 90vh !important;
-  padding-top: 10vh;
+  height: 85vh !important;
+  padding-top: 15vh;
   flex-direction: column !important;
  }
 
  .section1 > .section1-left {
-  display: flex;
+  flex: 2;
   align-items: center;
   justify-content: flex-start;
  }
 
  .section1 > .section1-left > .download {
   position: absolute;
-  bottom: 5%;
+  bottom: 10vh;
+ }
+
+ .section1 > .section1-right {
+  flex-direction: column;
+  flex: 3;
  }
 
  /* HERO TEXT */
 
  .hero-text > .heading {
   font-size: 30px;
+  line-height: 28px;
  }
 
  .hero-text > .description {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
  }
 
  /* HERO IMAGE */
 
  #hero {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin-top: -20vh;
  }
 
  /* GOOGLE PLAY & APP STORE CONTAINER */
 
  .download {
-  width: 80%;
+  width: 90% !important;
+  padding: 10px 20px;
+ }
+
+ .section1 .download {
   max-width: fit-content;
-  padding: 20px 30px;
+  margin: 0 10%;
  }
 
  .section1 .download {
@@ -544,8 +669,9 @@
 
  /* 2ND SECTION */
 
- .section2 > .container {
-  flex-direction: column;
+ .container {
+  border-radius: 40px;
+  flex-direction: column !important;
  }
 
  .section2-left {
@@ -576,18 +702,41 @@
  /* 4TH SECTION END */
  /* 5TH SECTION END */
 
+ /* BACKGROUND SECTION */
+
+ .section3 > .background,
+ .section5 > .background {
+  width: 200%;
+  overflow: hidden;
+ }
+
+ .section3,
+ .section5 {
+  overflow: hidden;
+ }
+
+ /* BACKGROUND SECTION END */
+
  /* DOWNLOAD SECTION */
 
  .section6 {
   height: fit-content !important;
  }
 
+ .section6 > .download > .row {
+  margin-left: 1%;
+ }
+
  .section6 > .download > .row > .download-heading {
-  font-size: 26px;
+  font-size: 12px;
+ }
+
+ .section6 > .download > .row > .download-links {
+  width: 60%;
  }
 
  .section6 > .download > img {
-  height: 160px;
+  height: 100px;
  }
 
  /* DOWNLOAD SECTION END */
@@ -604,10 +753,11 @@
 
  .section7 .description,
  .contact-desc {
-  font-size: 18px;
+  font-size: 12px;
  }
 
  .section7-left {
+  width: 80%;
   margin: 6%;
  }
 
@@ -619,6 +769,9 @@
   padding-left: 15px;
  }
 
+ .section7-right {
+  clip-path: circle(50% at bottom right);
+ }
  /* HELP SECTION END */
 
  /* FOOTER */
@@ -627,23 +780,53 @@
   padding: 50px 10%;
  }
 
+ .footer-navigation {
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  gap: 24px;
+ }
+
  .footer-menu {
-  height: 36px;
-  font-size: 14px;
-  margin-bottom: 26px;
+  height: 18px;
+  font-size: 10px;
+  margin-bottom: 12px;
  }
 
  .footer-navigation-items {
-  max-width: 15%;
+  width: 45%;
+  max-width: unset;
+ }
+
+ .footer-navigation-items > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+ }
+
+ .footer-logo,
+ .footer-account {
+  order: -1;
+ }
+
+ .footer-logo {
+  width: 82.33px;
+  height: 18px;
+ }
+
+ .footer-logo-img {
+  width: 100% !important;
+  height: 100% !important;
  }
 
  .footer-navigation-items .footer-item {
-  font-size: 12px;
+  font-size: 8px;
  }
 
  .footer-account .footer-item {
   width: 60px;
-  height: 36px;
+  height: 18px;
  }
 
  .footer-footer {
@@ -651,7 +834,11 @@
  }
 
  .footer-copyright {
-  font-size: 18px;
+  font-size: 14px;
+ }
+
+ .footer-links {
+  width: 60%;
  }
 
  /* FOOTER END */

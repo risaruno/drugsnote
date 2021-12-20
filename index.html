@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav>
-        <header class="header">
+        <header>
             <div class="logo-holder">
                 <a href="#"><img src="./images/logo.svg" alt="site logo" height="36" width="162"></a>
             </div>
@@ -21,11 +21,125 @@
                 <ul class="menu-links">
                     <li class="menu-item">About us</li>
                     <li class="menu-item">Help</li>
-                    <li class="menu-item">Language</li>
+                    <li id="dropper" class="menu-item">Language</li>
                 </ul>
                 <ul class="menu-account">
                     <li class="btn-login login"><a href="#">Login</a></li>
                     <li class="btn-login signup"><a href="#">Sign up</a></li>
+                </ul>
+                <ul id="drop-target" class="dropdown-items">
+                    <li class="drop-item drop-active">
+                        <span class="drop-desc">
+                            English
+                        </span>
+                    </li>
+                    <li class="drop-item">
+                        <span class="drop-desc">
+                            Korean
+                        </span>
+                    </li>
+                    <li class="drop-item">
+                        <span class="drop-desc">
+                            Russian
+                        </span>
+                    </li>
+                    <li class="drop-item">
+                        <span class="drop-desc">
+                            Uzbek
+                        </span>
+                    </li>
+                    <li class="drop-item">
+                        <span class="drop-desc">
+                            Arabic
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div id="menu-trigger" class="trigger menu-trigger">
+                <img src="./images/burger-icon.png">
+            </div>
+            <div id="mobile-menu" class="mobile-menu none">    
+                <div id="close-trigger" class="trigger close-trigger">
+                    <img src="./images/cross-icon.png">
+                </div>
+                <ul class="mobile-menu-account">
+                    <li class="btn-login login"><a href="#">Login</a></li>
+                    <li class="btn-login signup"><a href="#">Sign up</a></li>
+                </ul>
+                <ul class="mobile-menu-links">
+                    <li class="menu-item">
+                        <span class="item-icon">
+                            <img src="./images/about-icon.png">
+                        </span>
+                        <span class="item-desc">
+                            About us
+                        </span>
+                        <span class="item-arrow">
+                            <img src="./images/circle-arrow-right.png">
+                        </span>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <div id="mobile-dropper" class="main-item">
+                            <span class="item-icon">
+                                <img src="./images/language-icon.png">
+                            </span>
+                            <span class="item-desc">
+                                Language
+                            </span>
+                            <span class="item-arrow">
+                                <img src="./images/circle-arrow-right.png">
+                            </span>
+                        </div>
+                        <ul id="mobile-drop-target" class="mobile-dropdown-items">
+                            <li class="drop-item drop-active">
+                                <span class="drop-icon">
+                                    <img src="./images/check-icon.png">
+                                </span>
+                                <span class="drop-desc">
+                                    English
+                                </span>
+                            </li>
+                            <li class="drop-item">
+                                <span class="drop-icon">
+                                </span>
+                                <span class="drop-desc">
+                                    Korean
+                                </span>
+                            </li>
+                            <li class="drop-item">
+                                <span class="drop-icon">
+                                </span>
+                                <span class="drop-desc">
+                                    Russian
+                                </span>
+                            </li>
+                            <li class="drop-item">
+                                <span class="drop-icon">
+                                </span>
+                                <span class="drop-desc">
+                                    Uzbek
+                                </span>
+                            </li>
+                            <li class="drop-item">
+                                <span class="drop-icon">
+                                </span>
+                                <span class="drop-desc">
+                                    Arabic
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <span class="item-icon">
+                            <img src="./images/help-icon.png">
+                        </span>
+                        <span class="item-desc">
+                            Help
+                        </span>
+                        <span class="item-arrow">
+                            <img src="./images/circle-arrow-right.png">
+                        </span>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -85,14 +199,14 @@
                 </div>
             </div>    
             <div class="section2-right">  
-                <img src="./images/section2-img.png" alt="Medicine-Image">
+                <img class="section-img" src="./images/section2-img.png" alt="Medicine-Image">
             </div>
         </div>
     </div>
     <div class="section section3">
         <img class="background" src="./images/section3-bg.png">  
         <div class="section3-left">
-            <img src="./images/section3-img.png" alt="Take Pills On Time">
+            <img class="section-img" src="./images/section3-img.png" alt="Take Pills On Time">
         </div>
         <div class="section3-right">
             <div class="text">
@@ -109,7 +223,7 @@
     </div>
     <div class="section section4">
         <div class="section4-left">
-            <img src="./images/section4-img.png" alt="NFC">
+            <img class="section-img" src="./images/section4-img.png" alt="NFC">
         </div>
         <div class="section4-right">
             <div class="text">
@@ -130,7 +244,7 @@
     <div class="section section5">
         <img class="background" src="./images/section5-bg.png">
         <div class="section5-left">
-            <img src="./images/section5-img.png" alt="DrugsNote">
+            <img class="section-img" src="./images/section5-img.png" alt="DrugsNote">
         </div>
         <div class="section5-right">
             <div class="text">
@@ -198,22 +312,15 @@
                 </div>
             </div>
             <div class="section7-right">
-                <img src="./images/medicines.png" alt="Mask Group" class="mask-img">
-                <!-- <svg id="svg-mask" viewBox="0 0 733 619" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <clipPath id="mask">
-                            <path d="M168.5 503.658C132.1 550.458 41 578.491 0 586.658C193.5 606.658 601.8 637.558 687 601.158C793.5 555.658 683.5 53.6579 662 15.1579C640.5 -23.3421 515 19.6579 487.5 53.6579C460 87.6579 479.5 152.158 441.5 198.158C403.5 244.158 307.5 227.658 253.5 290.158C199.5 352.658 214 445.158 168.5 503.658Z" fill="#C4C4C4"/>
-                        </clipPath>
-                    </defs>
-                </svg>     -->
+                <img src="./images/medicines.png">
             </div>
         </div>
     </div>
 
     <footer class="footer">
         <div class="footer-navigation">
-            <div class="footer-logo logo-holder">
-                <a href="#"><img src="./images/logo-footer.png" alt="DrugsNote" class="footer-logo"></a>
+            <div class="footer-navigation-items footer-logo logo-holder">
+                <a href="#"><img src="./images/logo-footer.png" alt="DrugsNote" class="footer-logo-img"></a>
             </div>
             <div class="footer-navigation-items footer-about">
                 <div class="footer-menu">About us</div>
@@ -252,6 +359,26 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-navigation-items footer-social">
+                <div class="footer-menu">Social Media</div>
+                <ul>
+                    <li class="footer-item">
+                        <a href="#"><img src="./images/instagram.png"></a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#"><img src="./images/facebook.png"></a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#"><img src="./images/linkedin.png"></a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#"><img src="./images/kakaotalk.png"></a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#"><img src="./images/telegram.png"></a>
+                    </li>
+                </ul>
+            </div>
             <div class="footer-navigation-items footer-account">
                 <ul>
                     <li class="footer-item footer-login">Login</li>
@@ -272,6 +399,6 @@
             </div>
         </div>
 </footer>
-
+<script src="./js/main.js"></script>
 </body>
 </html>
