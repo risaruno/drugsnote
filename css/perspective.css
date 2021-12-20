@@ -1,0 +1,658 @@
+/* ~~~~~~~~~~~~~~~LAPTOP~~~~~~~~~~~~~~~ */
+
+@media (max-width: 1365px) and (min-width: 1024px) {
+ /* HEADER */
+
+ .logo-holder > a > img {
+  height: 36px;
+ }
+
+ .menu-links {
+  margin-right: 56px;
+ }
+
+ .menu-item {
+  font-size: 16px;
+  padding: 20px;
+ }
+
+ .btn-login > a {
+  width: 100px;
+  height: 36px;
+  font-size: 16px;
+ }
+
+ /* HEADER END */
+
+ /* MAIN SECTION SETTING */
+
+ .section {
+  height: 100vh;
+  max-height: 768px;
+ }
+
+ /* IMAGE ON SECTIONS */
+
+ .section3 > div,
+ .section4 > div,
+ .section5 > div {
+  height: 100%;
+ }
+
+ .section > div > img {
+  height: 100%;
+ }
+
+ /* 1ST SECTION */
+
+ .section1 {
+  height: 80vh !important;
+  max-height: 615px !important;
+  padding-top: 20vh;
+ }
+
+ /* HERO TEXT */
+
+ .hero-text > .heading {
+  font-size: 40px;
+ }
+
+ .hero-text > .description {
+  font-size: 22px;
+  line-height: 40px;
+ }
+
+ /* GOOGLE PLAY & APP STORE CONTAINER */
+
+ .download {
+  padding: 20px 30px;
+ }
+
+ .section1 .download {
+  height: 125px;
+ }
+
+ .download-heading {
+  font-size: 16px;
+ }
+
+ /* 1ST SECTION END */
+
+ /* //////HEADING & DESCRIPTION */
+
+ .text > .number {
+  font-size: 160px;
+  margin-bottom: -50px;
+ }
+
+ .text > .heading {
+  font-size: 30px;
+ }
+
+ .text > .description {
+  font-size: 18px;
+  margin-top: 14px;
+ }
+
+ /* //////HEADING & DESCRIPTION END */
+
+ /* 2ND SECTION */
+
+ .section2-left {
+  margin: 5% 7%;
+ }
+
+ .section2-left > .text:first-child {
+  margin-bottom: 24px;
+ }
+
+ /* 2ND SECTION END */
+
+ /* 3RD SECTION */
+ /* 4TH SECTION */
+ /* 5TH SECTION */
+
+ .section3-right,
+ .section4-right,
+ .section5-right {
+  padding: 0 8%;
+ }
+
+ /* 3RD SECTION END */
+ /* 4TH SECTION END */
+ /* 5TH SECTION END */
+
+ /* DOWNLOAD SECTION */
+
+ .section6 {
+  height: fit-content !important;
+ }
+
+ .section6 > .download > .row > .download-heading {
+  font-size: 32px;
+ }
+
+ .section6 > .download > img {
+  height: 200px;
+ }
+
+ /* DOWNLOAD SECTION END */
+
+ /* HELP SECTION */
+
+ .section7 .text:first-child {
+  margin-bottom: 30px;
+ }
+
+ .section7 .contact-icon > img {
+  width: 24px;
+ }
+
+ .section7 .description,
+ .contact-desc {
+  font-size: 22px;
+ }
+
+ .section7-left {
+  margin: 6%;
+ }
+
+ .contact-list > * {
+  padding: 7px 0;
+ }
+
+ .contact-desc {
+  padding-left: 15px;
+ }
+
+ /* HELP SECTION END */
+
+ /* FOOTER */
+
+ footer {
+  padding: 50px 10%;
+ }
+
+ .footer-menu {
+  height: 36px;
+  font-size: 18px;
+  margin-bottom: 30px;
+ }
+
+ .footer-navigation-items {
+  max-width: 15%;
+ }
+
+ .footer-navigation-items .footer-item {
+  font-size: 16px;
+ }
+
+ .footer-account .footer-item {
+  width: 80px;
+  height: 36px;
+ }
+
+ .footer-footer {
+  margin: 36px 0;
+ }
+
+ .footer-copyright {
+  font-size: 22px;
+ }
+
+ /* FOOTER END */
+}
+
+/* ~~~~~~~~~~~~~~~TABLET~~~~~~~~~~~~~~~ */
+
+@media (max-width: 1023px) and (min-width: 900px) {
+ /* HEADER */
+
+ .logo-holder > a > img {
+  height: 36px;
+ }
+
+ .menu-links {
+  margin-right: 12px;
+ }
+
+ .menu-item {
+  font-size: 16px;
+  padding: 20px;
+ }
+
+ .btn-login > a {
+  width: 100px;
+  height: 36px;
+  font-size: 16px;
+ }
+
+ /* HEADER END */
+
+ /* MAIN SECTION SETTING */
+
+ .section {
+  height: 768px;
+ }
+
+ /* IMAGE ON SECTIONS */
+
+ .section3 > div,
+ .section4 > div,
+ .section5 > div {
+  height: 100%;
+ }
+
+ .section > div > img {
+  height: 100%;
+ }
+
+ /* 1ST SECTION */
+
+ .section1 {
+  height: 615px !important;
+  padding-top: 20vh;
+ }
+
+ /* HERO TEXT */
+
+ .hero-text > .heading {
+  font-size: 30px;
+ }
+
+ .hero-text > .description {
+  font-size: 18px;
+  line-height: 30px;
+ }
+
+ /* GOOGLE PLAY & APP STORE CONTAINER */
+
+ .download {
+  padding: 20px 30px;
+ }
+
+ .section1 .download {
+  height: 100px;
+ }
+
+ .download-heading {
+  font-size: 14px;
+ }
+
+ /* 1ST SECTION END */
+
+ /* //////HEADING & DESCRIPTION */
+
+ .text > .number {
+  font-size: 120px;
+  margin-bottom: -50px;
+ }
+
+ .text > .heading {
+  font-size: 24px;
+ }
+
+ .text > .description {
+  font-size: 16px;
+  margin-top: 10px;
+ }
+
+ /* //////HEADING & DESCRIPTION END */
+
+ /* 2ND SECTION */
+
+ .section2-left {
+  margin: 5% 7%;
+ }
+
+ .section2-left > .text:first-child {
+  margin-bottom: 20px;
+ }
+
+ /* 2ND SECTION END */
+
+ /* 3RD SECTION */
+ /* 4TH SECTION */
+ /* 5TH SECTION */
+
+ .section3-right,
+ .section4-right,
+ .section5-right {
+  padding: 0 2%;
+ }
+
+ /* 3RD SECTION END */
+ /* 4TH SECTION END */
+ /* 5TH SECTION END */
+
+ /* DOWNLOAD SECTION */
+
+ .section6 {
+  height: fit-content !important;
+ }
+
+ .section6 > .download > .row > .download-heading {
+  font-size: 26px;
+ }
+
+ .section6 > .download > img {
+  height: 160px;
+ }
+
+ /* DOWNLOAD SECTION END */
+
+ /* HELP SECTION */
+
+ .section7 .text:first-child {
+  margin-bottom: 20px;
+ }
+
+ .section7 .contact-icon > img {
+  width: 20px;
+ }
+
+ .section7 .description,
+ .contact-desc {
+  font-size: 18px;
+ }
+
+ .section7-left {
+  margin: 6%;
+ }
+
+ .contact-list > * {
+  padding: 5px 0;
+ }
+
+ .contact-desc {
+  padding-left: 15px;
+ }
+
+ /* HELP SECTION END */
+
+ /* FOOTER */
+
+ footer {
+  padding: 50px 10%;
+ }
+
+ .footer-menu {
+  height: 36px;
+  font-size: 14px;
+  margin-bottom: 26px;
+ }
+
+ .footer-navigation-items {
+  max-width: 15%;
+ }
+
+ .footer-navigation-items .footer-item {
+  font-size: 12px;
+ }
+
+ .footer-account .footer-item {
+  width: 60px;
+  height: 36px;
+ }
+
+ .footer-footer {
+  margin: 25px 0;
+ }
+
+ .footer-copyright {
+  font-size: 18px;
+ }
+
+ /* FOOTER END */
+}
+
+/* ~~~~~~~~~~~~~~~MOBILE~~~~~~~~~~~~~~~ */
+
+@media (max-width: 899px) {
+ /* HEADER */
+
+ nav {
+  height: 10vh;
+ }
+
+ .logo-holder > a > img {
+  height: 26px;
+ }
+
+ .menu {
+  visibility: hidden;
+ }
+ /* 
+ .menu-links {
+  margin-right: 12px;
+ }
+
+ .menu-item {
+  font-size: 16px;
+  padding: 20px;
+ }
+
+ .btn-login > a {
+  width: 100px;
+  height: 36px;
+  font-size: 16px;
+ } */
+
+ /* HEADER END */
+
+ /* MAIN SECTION SETTING */
+
+ .section {
+  height: 100vh;
+  flex-direction: column-reverse;
+ }
+
+ /* IMAGE ON SECTIONS */
+
+ .section3 > div,
+ .section4 > div,
+ .section5 > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+ }
+
+ .section3-right > .text,
+ .section4-right > .text,
+ .section5-right > .text {
+  margin-top: 0;
+ }
+
+ .section > div > img {
+  margin-right: -10%;
+  height: 70%;
+ }
+
+ /* 1ST SECTION */
+
+ .section1 {
+  height: 90vh !important;
+  padding-top: 10vh;
+  flex-direction: column !important;
+ }
+
+ .section1 > .section1-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ }
+
+ .section1 > .section1-left > .download {
+  position: absolute;
+  bottom: 5%;
+ }
+
+ /* HERO TEXT */
+
+ .hero-text > .heading {
+  font-size: 30px;
+ }
+
+ .hero-text > .description {
+  font-size: 18px;
+  line-height: 30px;
+ }
+
+ /* HERO IMAGE */
+
+ #hero {
+  width: 100%;
+  height: 100%;
+  margin-top: -20vh;
+ }
+
+ /* GOOGLE PLAY & APP STORE CONTAINER */
+
+ .download {
+  width: 80%;
+  max-width: fit-content;
+  padding: 20px 30px;
+ }
+
+ .section1 .download {
+  height: 100px;
+ }
+
+ .download-heading {
+  font-size: 14px;
+ }
+
+ /* 1ST SECTION END */
+
+ /* //////HEADING & DESCRIPTION */
+
+ .text > .number {
+  font-size: 90px;
+  margin-bottom: -50px;
+ }
+
+ .text > .heading {
+  font-size: 20px;
+ }
+
+ .text > .description {
+  font-size: 14px;
+  margin-top: 10px;
+ }
+
+ /* //////HEADING & DESCRIPTION END */
+
+ /* 2ND SECTION */
+
+ .section2 > .container {
+  flex-direction: column;
+ }
+
+ .section2-left {
+  margin: 5% 7%;
+ }
+
+ .section2-left > .text:first-child {
+  margin-bottom: 20px;
+ }
+
+ .section2-left .description {
+  font-size: 14px;
+ }
+
+ /* 2ND SECTION END */
+
+ /* 3RD SECTION */
+ /* 4TH SECTION */
+ /* 5TH SECTION */
+
+ .section3-right,
+ .section4-right,
+ .section5-right {
+  padding: 0 2%;
+ }
+
+ /* 3RD SECTION END */
+ /* 4TH SECTION END */
+ /* 5TH SECTION END */
+
+ /* DOWNLOAD SECTION */
+
+ .section6 {
+  height: fit-content !important;
+ }
+
+ .section6 > .download > .row > .download-heading {
+  font-size: 26px;
+ }
+
+ .section6 > .download > img {
+  height: 160px;
+ }
+
+ /* DOWNLOAD SECTION END */
+
+ /* HELP SECTION */
+
+ .section7 .text:first-child {
+  margin-bottom: 20px;
+ }
+
+ .section7 .contact-icon > img {
+  width: 20px;
+ }
+
+ .section7 .description,
+ .contact-desc {
+  font-size: 18px;
+ }
+
+ .section7-left {
+  margin: 6%;
+ }
+
+ .contact-list > * {
+  padding: 5px 0;
+ }
+
+ .contact-desc {
+  padding-left: 15px;
+ }
+
+ /* HELP SECTION END */
+
+ /* FOOTER */
+
+ footer {
+  padding: 50px 10%;
+ }
+
+ .footer-menu {
+  height: 36px;
+  font-size: 14px;
+  margin-bottom: 26px;
+ }
+
+ .footer-navigation-items {
+  max-width: 15%;
+ }
+
+ .footer-navigation-items .footer-item {
+  font-size: 12px;
+ }
+
+ .footer-account .footer-item {
+  width: 60px;
+  height: 36px;
+ }
+
+ .footer-footer {
+  margin: 25px 0;
+ }
+
+ .footer-copyright {
+  font-size: 18px;
+ }
+
+ /* FOOTER END */
+}
