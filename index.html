@@ -1,404 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/perspective.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Mulish:wght@400;500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/perspective.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Mulish:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Drugsnote</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <header>
-            <div class="logo-holder">
-                <a href="#"><img src="./images/logo.svg" alt="site logo" height="36" width="162"></a>
-            </div>
-            <div class="menu">
-                <ul class="menu-links">
-                    <li class="menu-item">About us</li>
-                    <li class="menu-item">Help</li>
-                    <li id="dropper" class="menu-item">Language</li>
-                </ul>
-                <ul class="menu-account">
-                    <li class="btn-login login"><a href="#">Login</a></li>
-                    <li class="btn-login signup"><a href="#">Sign up</a></li>
-                </ul>
-                <ul id="drop-target" class="dropdown-items">
-                    <li class="drop-item drop-active">
-                        <span class="drop-desc">
-                            English
-                        </span>
-                    </li>
-                    <li class="drop-item">
-                        <span class="drop-desc">
-                            Korean
-                        </span>
-                    </li>
-                    <li class="drop-item">
-                        <span class="drop-desc">
-                            Russian
-                        </span>
-                    </li>
-                    <li class="drop-item">
-                        <span class="drop-desc">
-                            Uzbek
-                        </span>
-                    </li>
-                    <li class="drop-item">
-                        <span class="drop-desc">
-                            Arabic
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div id="menu-trigger" class="trigger menu-trigger">
-                <img src="./images/burger-icon.png">
-            </div>
-            <div id="mobile-menu" class="mobile-menu none">    
-                <div id="close-trigger" class="trigger close-trigger">
-                    <img src="./images/cross-icon.png">
-                </div>
-                <ul class="mobile-menu-account">
-                    <li class="btn-login login"><a href="#">Login</a></li>
-                    <li class="btn-login signup"><a href="#">Sign up</a></li>
-                </ul>
-                <ul class="mobile-menu-links">
-                    <li class="menu-item">
-                        <span class="item-icon">
-                            <img src="./images/about-icon.png">
-                        </span>
-                        <span class="item-desc">
-                            About us
-                        </span>
-                        <span class="item-arrow">
-                            <img src="./images/circle-arrow-right.png">
-                        </span>
-                    </li>
-                    <li class="menu-item menu-dropdown">
-                        <div id="mobile-dropper" class="main-item">
-                            <span class="item-icon">
-                                <img src="./images/language-icon.png">
-                            </span>
-                            <span class="item-desc">
-                                Language
-                            </span>
-                            <span class="item-arrow">
-                                <img src="./images/circle-arrow-right.png">
-                            </span>
-                        </div>
-                        <ul id="mobile-drop-target" class="mobile-dropdown-items">
-                            <li class="drop-item drop-active">
-                                <span class="drop-icon">
-                                    <img src="./images/check-icon.png">
-                                </span>
-                                <span class="drop-desc">
-                                    English
-                                </span>
-                            </li>
-                            <li class="drop-item">
-                                <span class="drop-icon">
-                                </span>
-                                <span class="drop-desc">
-                                    Korean
-                                </span>
-                            </li>
-                            <li class="drop-item">
-                                <span class="drop-icon">
-                                </span>
-                                <span class="drop-desc">
-                                    Russian
-                                </span>
-                            </li>
-                            <li class="drop-item">
-                                <span class="drop-icon">
-                                </span>
-                                <span class="drop-desc">
-                                    Uzbek
-                                </span>
-                            </li>
-                            <li class="drop-item">
-                                <span class="drop-icon">
-                                </span>
-                                <span class="drop-desc">
-                                    Arabic
-                                </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <span class="item-icon">
-                            <img src="./images/help-icon.png">
-                        </span>
-                        <span class="item-desc">
-                            Help
-                        </span>
-                        <span class="item-arrow">
-                            <img src="./images/circle-arrow-right.png">
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </header>
+      <header>
+        <div class="logo-holder">
+          <a href="#"
+            ><img
+              src="./images/logo.svg"
+              alt="site logo"
+              height="36"
+              width="162"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="menu-item">About us</li>
+            <li class="menu-item">Help</li>
+            <li id="dropper" class="menu-item">Language</li>
+          </ul>
+          <ul class="menu-account">
+            <li class="btn-login login"><a href="#">Login</a></li>
+            <li class="btn-login signup"><a href="#">Sign up</a></li>
+          </ul>
+          <ul id="drop-target" class="dropdown-items">
+            <li class="drop-item drop-active">
+              <span class="drop-desc"> English </span>
+            </li>
+            <li class="drop-item">
+              <span class="drop-desc"> Korean </span>
+            </li>
+            <li class="drop-item">
+              <span class="drop-desc"> Russian </span>
+            </li>
+            <li class="drop-item">
+              <span class="drop-desc"> Uzbek </span>
+            </li>
+            <li class="drop-item">
+              <span class="drop-desc"> Arabic </span>
+            </li>
+          </ul>
+        </div>
+        <div id="menu-trigger" class="trigger menu-trigger">
+          <img src="./images/burger-icon.png" />
+        </div>
+        <div id="mobile-menu" class="mobile-menu none">
+          <div id="close-trigger" class="trigger close-trigger">
+            <img src="./images/cross-icon.png" />
+          </div>
+          <ul class="mobile-menu-account">
+            <li class="btn-login login"><a href="#">Login</a></li>
+            <li class="btn-login signup"><a href="#">Sign up</a></li>
+          </ul>
+          <ul class="mobile-menu-links">
+            <li class="menu-item">
+              <div class="main-item">
+                <span class="item-icon">
+                  <img src="./images/about-icon.png" />
+                </span>
+                <span class="item-desc"> About us </span>
+                <span class="item-arrow">
+                  <img src="./images/circle-arrow-right.png" />
+                </span>
+              </div>
+            </li>
+            <li class="menu-item menu-dropdown">
+              <div id="mobile-dropper" class="main-item">
+                <span class="item-icon">
+                  <img src="./images/language-icon.png" />
+                </span>
+                <span class="item-desc"> Language </span>
+                <span class="item-arrow">
+                  <img src="./images/circle-arrow-right.png" />
+                </span>
+              </div>
+              <ul id="mobile-drop-target" class="mobile-dropdown-items">
+                <li class="drop-item drop-active">
+                  <span class="drop-icon"> </span>
+                  <span class="drop-desc"> English </span>
+                </li>
+                <li class="drop-item">
+                  <span class="drop-icon"> </span>
+                  <span class="drop-desc"> Korean </span>
+                </li>
+                <li class="drop-item">
+                  <span class="drop-icon"> </span>
+                  <span class="drop-desc"> Russian </span>
+                </li>
+                <li class="drop-item">
+                  <span class="drop-icon"> </span>
+                  <span class="drop-desc"> Uzbek </span>
+                </li>
+                <li class="drop-item">
+                  <span class="drop-icon"> </span>
+                  <span class="drop-desc"> Arabic </span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <div class="main-item">
+                <span class="item-icon">
+                  <img src="./images/help-icon.png" />
+                </span>
+                <span class="item-desc"> Help </span>
+                <span class="item-arrow">
+                  <img src="./images/circle-arrow-right.png" />
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
     </nav>
     <div class="section section1">
-        <div class="section1-left">
-            <div class="text hero-text">
-                <h1 class="heading">
-                Be reminded of your
-                daily intake of medicine
-                </h1>
-                <p class="description">
-                Drugsnote: Your personal pill reminder 
-                and medication tracker app.
-                </p>
-            </div>
-            <div class="download">
-                <div class="download-heading">Download the app now for free</div>
-                <div class="download-links">
-                    <a href="#" target="_blank" class="download-btn">
-                        <img src="./images/googleplay.png" alt="googleplay">
-                    </a>
-                    <a href="#" target="_blank" class="download-btn">
-                        <img src="./images/appstore.png" alt="appstore">
-                    </a>
-                </div>
-            </div>
+      <div class="section1-left">
+        <div class="text hero-text">
+          <h1 class="heading">Be reminded of your daily intake of medicine</h1>
+          <div class="description">
+            Drugsnote: Your personal pill reminder and medication tracker app.
+          </div>
         </div>
-        <div class="section1-right">
-            <img src="./images/hero.png" id="hero" alt="DrugsNote">
+        <div class="download">
+          <div class="download-heading">Download the app now for free</div>
+          <div class="download-links">
+            <a href="#" target="_blank" class="download-btn">
+              <img src="./images/googleplay.png" alt="googleplay" />
+            </a>
+            <a href="#" target="_blank" class="download-btn">
+              <img src="./images/appstore.png" alt="appstore" />
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="section1-right">
+        <img src="./images/hero.png" id="hero" alt="DrugsNote" />
+      </div>
     </div>
     <div class="section section2">
-        <div class="container">
-            <div class="section2-left">
-                <div class="text">
-                    <h2 class="heading">About Drugsnote</h2>
-                    <p class="description">
-                        Drugsnote is a reminder app designed to
-                        streamline your time management. Drugsnote
-                        schedules your drug  reminders so you
-                        can you prioritize your attention on more
-                        important tasks.
-                    </p>
-                </div>
-                <div class="text">
-                    <h2 class="heading">Deltoid</h2>
-                    <p class="description">
-                        Deltoid is a leading company specialized in the
-                        provision of digital healthcare services through
-                        cutting-edge technologies such as big data,
-                        artificial intelligence, and metaverse.
-                        Rehabilitation and prevention with an aim to
-                        provide convenience in health management
-                        are particularly highlighted.
-                    </p>
-                </div>
-            </div>    
-            <div class="section2-right">  
-                <img class="section-img" src="./images/section2-img.png" alt="Medicine-Image">
+      <div class="container">
+        <div class="section2-left">
+          <div class="text">
+            <h2 class="heading">About Drugsnote</h2>
+            <div class="description">
+              Drugsnote is a reminder app designed to streamline your time
+              management. Drugsnote schedules your drug reminders so you can you
+              prioritize your attention on more important tasks.
             </div>
+          </div>
+          <div class="text">
+            <h2 class="heading">Deltoid</h2>
+            <div class="description">
+              Deltoid is a leading company specialized in the provision of
+              digital healthcare services through cutting-edge technologies such
+              as big data, artificial intelligence, and metaverse.
+              Rehabilitation and prevention with an aim to provide convenience
+              in health management are particularly highlighted.
+            </div>
+          </div>
         </div>
+        <div class="section2-right">
+          <img
+            class="section-img"
+            src="./images/section2-img.png"
+            alt="Medicine-Image"
+          />
+        </div>
+      </div>
     </div>
     <div class="section section3">
-        <img class="background" src="./images/section3-bg.png">  
-        <div class="section3-left">
-            <img class="section-img" src="./images/section3-img.png" alt="Take Pills On Time">
+      <img class="background" src="./images/section3-bg.png" />
+      <div class="section3-left">
+        <img
+          class="section-img"
+          src="./images/section3-img.png"
+          alt="Take Pills On Time"
+        />
+      </div>
+      <div class="section3-right">
+        <div class="text">
+          <div class="number">01</div>
+          <h2 class="heading">Take pills on time</h2>
+          <div class="description">
+            Whether it`s medications, measurements or exercise, Drugsnote`s
+            reminders make sure you keep track of your health.
+          </div>
         </div>
-        <div class="section3-right">
-            <div class="text">
-                <div class="number">01</div>
-                <h2 class="heading">Take pills on time</h2>
-                <p class="description">
-                    Whether it`s medications,
-                    measurements or exercise,
-                    Drugsnote`s reminders make
-                    sure you keep track of your health.
-                </p>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="section section4">
-        <div class="section4-left">
-            <img class="section-img" src="./images/section4-img.png" alt="NFC">
+      <div class="section4-left">
+        <img class="section-img" src="./images/section4-img.png" alt="NFC" />
+      </div>
+      <div class="section4-right">
+        <div class="text">
+          <div class="number">02</div>
+          <h2 class="heading">NFC function</h2>
+          <div class="description">
+            This one-of-a-kind feature allows you to check your medication list
+            with just a click.With NFC chip provided by us, you are just a click
+            away from your daily
+            <br />dose.
+          </div>
         </div>
-        <div class="section4-right">
-            <div class="text">
-                <div class="number">02</div>
-                <h2 class="heading">NFC function</h2>
-                <p class="description">
-                    This one-of-a-kind feature
-                    allows you to check your
-                    medication list with just a
-                    click.With NFC chip
-                    provided by us, you are just
-                    a click away from your daily
-                    <br>dose.
-                </p>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="section section5">
-        <img class="background" src="./images/section5-bg.png">
-        <div class="section5-left">
-            <img class="section-img" src="./images/section5-img.png" alt="DrugsNote">
+      <img class="background" src="./images/section5-bg.png" />
+      <div class="section5-left">
+        <img
+          class="section-img"
+          src="./images/section5-img.png"
+          alt="DrugsNote"
+        />
+      </div>
+      <div class="section5-right">
+        <div class="text">
+          <div class="number">03</div>
+          <h2 class="heading">Simple and Easy</h2>
+          <div class="description">
+            Aesthetics and Simplicity of the user-friendly Drugsnote interface
+            aimed to make your Life hassle-free and more elegant through giving
+            <br />you a pleasant experience.
+          </div>
         </div>
-        <div class="section5-right">
-            <div class="text">
-                <div class="number">03</div>
-                <h2 class="heading">Simple and Easy</h2>
-                <p class="description">
-                    Aesthetics and Simplicity of
-                    the user-friendly Drugsnote
-                    interface aimed to make
-                    your Life hassle-free and
-                    more elegant through giving
-                    <br>you a pleasant experience.
-                </p>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="section section6">
-        <div class="download">
-            <div class="row">
-                <h1 class="download-heading">
-                    Start your easier life right now!
-                </h1>
-                <div class="download-links">
-                    <a href="#" target="_blank" class="download-btn">
-                        <img src="./images/googleplay.png" alt="googleplay">
-                    </a>
-                    <a href="#" target="_blank" class="download-btn">
-                        <img src="./images/appstore.png" alt="appstore">
-                    </a>
-                </div>
-            </div>
-            <img src="./images/phone-hand.png" alt="Phone on the hand">
+      <div class="download">
+        <div class="row">
+          <h1 class="download-heading">Start your easier life right now!</h1>
+          <div class="download-links">
+            <a href="#" target="_blank" class="download-btn">
+              <img src="./images/googleplay.png" alt="googleplay" />
+            </a>
+            <a href="#" target="_blank" class="download-btn">
+              <img src="./images/appstore.png" alt="appstore" />
+            </a>
+          </div>
         </div>
-    </div>    
+        <img src="./images/phone-hand.png" alt="Phone on the hand" />
+      </div>
+    </div>
     <div class="section section7">
-        <div class="container">
-            <div class="section7-left">
-                <div class="text">
-                    <h2 class="heading">Help</h2>
-                    <p class="description">
-                        Our mission is to simplify your
-                        healthcare routine regardless of the
-                        level of complexity involved and enable
-                        you to take control of your own health. 
-                        Should you have any further questions,
-                        please don`t hesitate to contact us.
-                    </p>
-                </div>
-                <div class="text">
-                    <h2 class="heading">Contacts</h2>
-                    <p class="description">
-                        <div class="contact-list">
-                            <div class="contact-icon">
-                                <img src="./images/phone-icon.png">
-                            </div>
-                            <div class="contact-desc">010-1234-1234</div>
-                        </div>
-                        <div class="contact-list">
-                            <div class="contact-icon">
-                                <img src="./images/mail-icon.png">
-                            </div>
-                            <div class="contact-desc">drugsnote@webtech.com</div>
-                        </div>
-                    </p>
-                </div>
+      <div class="container">
+        <div class="section7-left">
+          <div class="text">
+            <h2 class="heading">Help</h2>
+            <div class="description">
+              Our mission is to simplify your healthcare routine regardless of
+              the level of complexity involved and enable you to take control of
+              your own health. Should you have any further questions, please
+              don`t hesitate to contact us.
             </div>
-            <div class="section7-right">
-                <img src="./images/medicines.png">
+          </div>
+          <div class="text">
+            <h2 class="heading">Contacts</h2>
+            <div class="description">
+              <div class="contact-list">
+                <div class="contact-icon">
+                  <img src="./images/phone-icon.png" />
+                </div>
+                <div class="contact-desc">010-1234-1234</div>
+              </div>
+              <div class="contact-list">
+                <div class="contact-icon">
+                  <img src="./images/mail-icon.png" />
+                </div>
+                <div class="contact-desc">drugsnote@webtech.com</div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="section7-right">
+          <img src="./images/medicines.png" />
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
-        <div class="footer-navigation">
-            <div class="footer-navigation-items footer-logo logo-holder">
-                <a href="#"><img src="./images/logo-footer.png" alt="DrugsNote" class="footer-logo-img"></a>
-            </div>
-            <div class="footer-navigation-items footer-about">
-                <div class="footer-menu">About us</div>
-                <div class="footer-item">
-                    Drugsnote: We strive to make life easier for you
-                </div>
-            </div>
-            <div class="footer-navigation-items footer-language">
-                <div class="footer-menu">Language</div>
-                <ul>
-                    <li class="footer-item">
-                        <a href="#">English</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#">Korean</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#">Russian</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#">Arabic</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#">Uzbek</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-navigation-items footer-help">
-                <div class="footer-menu">Help</div>
-                <ul>
-                    <li class="footer-item">
-                        <a href="#">+82 10 2222-5555</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#">drugsnoteapp@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-navigation-items footer-social">
-                <div class="footer-menu">Social Media</div>
-                <ul>
-                    <li class="footer-item">
-                        <a href="#"><img src="./images/instagram.png"></a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#"><img src="./images/facebook.png"></a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#"><img src="./images/linkedin.png"></a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#"><img src="./images/kakaotalk.png"></a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#"><img src="./images/telegram.png"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-navigation-items footer-account">
-                <ul>
-                    <li class="footer-item footer-login">Login</li>
-                    <li class="footer-item footer-signup">Sign up</li>
-                </ul>
-            </div>
+      <div class="footer-navigation">
+        <div class="footer-navigation-items footer-logo logo-holder">
+          <a href="#"
+            ><img
+              src="./images/logo-footer.png"
+              alt="DrugsNote"
+              class="footer-logo-img"
+          /></a>
         </div>
-        <hr>
-        <div class="footer-footer">
-            <div class="footer-copyright"><small>ⓒ </small><strong>web</strong>tech</div>
-            <div class="download-links footer-links">
-                <a href="#" target="_blank" class="download-btn">
-                    <img src="./images/googleplay-white.png" alt="googleplay">
-                </a>
-                <a href="#" target="_blank" class="download-btn">
-                    <img src="./images/appstore-white.png" alt="appstore">
-                </a>
-            </div>
+        <div class="footer-navigation-items footer-about">
+          <div class="footer-menu">About us</div>
+          <div class="footer-item">
+            Drugsnote: We strive to make life easier for you
+          </div>
         </div>
-</footer>
-<script src="./js/main.js"></script>
-</body>
+        <div class="footer-navigation-items footer-language">
+          <div class="footer-menu">Language</div>
+          <ul>
+            <li class="footer-item">
+              <a href="#">English</a>
+            </li>
+            <li class="footer-item">
+              <a href="#">Korean</a>
+            </li>
+            <li class="footer-item">
+              <a href="#">Russian</a>
+            </li>
+            <li class="footer-item">
+              <a href="#">Arabic</a>
+            </li>
+            <li class="footer-item">
+              <a href="#">Uzbek</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-navigation-items footer-help">
+          <div class="footer-menu">Help</div>
+          <ul>
+            <li class="footer-item">(+82)10 2222-5555</li>
+            <li class="footer-item">drugsnoteapp@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footer-navigation-items footer-social">
+          <div class="footer-menu">Social Media</div>
+          <ul>
+            <li class="footer-item">
+              <a href="#"><img src="./images/instagram.png" /></a>
+            </li>
+            <li class="footer-item">
+              <a href="#"><img src="./images/facebook.png" /></a>
+            </li>
+            <li class="footer-item">
+              <a href="#"><img src="./images/linkedin.png" /></a>
+            </li>
+            <li class="footer-item">
+              <a href="#"><img src="./images/kakaotalk.png" /></a>
+            </li>
+            <li class="footer-item">
+              <a href="#"><img src="./images/telegram.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-navigation-items footer-account">
+          <ul>
+            <li class="footer-item footer-login">
+              <a href="#">Login</a>
+            </li>
+            <li class="footer-item footer-signup">
+              <a href="#">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-footer">
+        <div class="footer-copyright">
+          <small>ⓒ </small><strong>web</strong>tech
+        </div>
+        <div class="download-links footer-links">
+          <a href="#" target="_blank" class="download-btn">
+            <img src="./images/googleplay-white.png" alt="googleplay" />
+          </a>
+          <a href="#" target="_blank" class="download-btn">
+            <img src="./images/appstore-white.png" alt="appstore" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
