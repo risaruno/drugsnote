@@ -754,7 +754,10 @@
   }
 
   .section7-right {
-    clip-path: circle(50% at bottom right);
+    top: unset;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
   }
   /* HELP SECTION END */
 

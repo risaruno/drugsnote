@@ -433,10 +433,12 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   z-index: -1;
-  clip-path: circle(50% at right);
+  background: url("../images/medicines.png") no-repeat right top;
+  background-size: cover;
+  clip-path: url(#my-clip-path);
 }
 
 .section7-right > img {
